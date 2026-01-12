@@ -1,6 +1,6 @@
 # 🥖 Mafate Boulangerie
 
-Site vitrine **one page** pour une boulangerie artisanale.
+Site vitrine **one page** pour une boulangerie artisanale mafatais.
 
 Lien du site : 
 https://krmultipro.github.io/boulangerie/
