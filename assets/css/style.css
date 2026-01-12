@@ -1,41 +1,92 @@
-:root{
-  --fern: #2E8B57; /* vert fougère */
+/* =========================
+   VARIABLES
+========================= */
+:root {
+    --fern: #2E8B57; /* vert fougère */
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    background: #fff;
+/* =========================
+   GLOBAL
+========================= */
+body {
+    font-family: Arial, sans-serif;
 }
 
 section {
     padding: 60px 20px;
 }
 
-.produits {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-.navbar-brand{
-  font-family: 'Pacifico', cursive;
-  color: var(--fern) !important;
-  font-size: 1.4rem;
+/* =========================
+   TYPOGRAPHIE
+========================= */
+h1, h2 {
+    font-family: 'Pacifico', cursive;
 }
 
-h1, h2, .site-title {
-  font-family: 'Pacifico', cursive;
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    color: var(--fern) !important;
+    font-size: 1.6rem;
 }
+
+/* =========================
+   NAVBAR
+========================= */
+.nav-link {
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--fern) !important;
+}
+
+/* =========================
+   HERO / ACCUEIL
+========================= */
+#accueil {
+    background: linear-gradient(
+        rgba(46, 139, 87, 0.85),
+        rgba(46, 139, 87, 0.85)
+    );
+}
+
+/* =========================
+   BOUTONS
+========================= */
 .btn-outline-primary {
-  border-color: var(--fern);
-  color: var(--fern);
+    border-color: var(--fern);
+    color: var(--fern);
 }
+
 .btn-outline-primary:hover {
-  background: var(--fern);
-  color: #fff;
-  border-color: var(--fern);
+    background-color: var(--fern);
+    border-color: var(--fern);
+    color: #fff;
 }
-/* Survol des liens de la nav */
-.nav-link:hover, .nav-link:focus {
-  color: var(--fern) !important;
+
+/* =========================
+   PRODUITS
+========================= */
+.card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card-title {
+    color: var(--fern);
+    font-weight: 600;
+}
+
+/* =========================
+   CONTACT
+========================= */
+#contact p {
+    margin-bottom: 0.3rem;
 }
