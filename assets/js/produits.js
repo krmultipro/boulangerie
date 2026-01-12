@@ -1,38 +1,38 @@
 const produits = [
-    {
-        nom: "Baguette normale",
-        categorie: "pains",
-        prix: "1,20 €",
-        image: "assets/images/produits/baguette.jpg"
-    },
-        {
-        nom: "Baguette deux doigts",
-        categorie: "pains",
-        prix: "1,60 €",
-        image: "assets/images/produits/baguette1.jpg"
-    },
-    {
-        nom: "Demi croissant",
-        categorie: "viennoiseries",
-        prix: "1,10 €",
-        image: "assets/images/produits/croissant.jpg"
-    },
-    {
-        nom: "Gâteau smile",
-        categorie: "gateaux",
-        prix: "15,00 €",
-        image: "assets/images/produits/gateau.jpg"
-    }
+  {
+    nom: "Baguette normale",
+    categorie: "pains",
+    prix: "1,20 €",
+    image: "assets/images/produits/baguette.jpg",
+  },
+  {
+    nom: "Baguette deux doigts",
+    categorie: "pains",
+    prix: "1,60 €",
+    image: "assets/images/produits/baguette1.jpg",
+  },
+  {
+    nom: "Demi croissant",
+    categorie: "viennoiseries",
+    prix: "1,10 €",
+    image: "assets/images/produits/croissant.jpg",
+  },
+  {
+    nom: "Gâteau smile",
+    categorie: "gateaux",
+    prix: "15,00 €",
+    image: "assets/images/produits/gateau.jpg",
+  },
 ];
 
 function afficherProduits(categorie) {
-    const container = document.getElementById("liste-produits");
-    container.innerHTML = "";
+  const container = document.getElementById("liste-produits");
+  container.innerHTML = "";
 
-    produits
-  .filter(p => p.categorie === categorie)
-  .forEach(p => {
-    container.innerHTML += `
+  produits
+    .filter((p) => p.categorie === categorie)
+    .forEach((p) => {
+      container.innerHTML += `
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="produit card h-100">
           <img
@@ -48,5 +48,5 @@ function afficherProduits(categorie) {
         </div>
       </div>
     `;
-  });
+    });
 }
