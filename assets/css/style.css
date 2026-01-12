@@ -1,0 +1,41 @@
+:root{
+  --fern: #2E8B57; /* vert fougère */
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.navbar-brand{
+  font-family: 'Pacifico', cursive;
+  color: var(--fern) !important;
+  font-size: 1.4rem;
+}
+
+h1, h2, .site-title {
+  font-family: 'Pacifico', cursive;
+}
+.btn-outline-primary {
+  border-color: var(--fern);
+  color: var(--fern);
+}
+.btn-outline-primary:hover {
+  background: var(--fern);
+  color: #fff;
+  border-color: var(--fern);
+}
+/* Survol des liens de la nav */
+.nav-link:hover, .nav-link:focus {
+  color: var(--fern) !important;
+}
